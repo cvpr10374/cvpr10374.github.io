@@ -73,74 +73,6 @@
             <span class="author-block">
               Paper ID : 10374</span>
           </div>
-
-
-<!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup></sup></span>
-            <span class="author-block"><sup></sup></span>
-          </div> -->
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span> -->
-                  <!-- <span>arXiv</span> -->
-                <!-- </a> -->
-              <!-- </span> -->
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span> -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" style="height: 1.2em;" alt="HF"/>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span> -->
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
-
           </div>
         </div>
       </div>
@@ -189,12 +121,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Retrieval-Augmented Generation (RAG) has recently been extended to multimodal settings, connecting multimodal large language models (MLLMs) with vast corpora of external knowledge such as multimodal knowledge graphs (MMKGs). 
-Despite their recent success, multimodal RAG in the audio-visual domain remains challenging due to 1) limited modality coverage and multi-hop connectivity of existing MMKGs, and 2) retrieval based solely on similarity in a shared multimodal embedding space, which fails to filter out off-topic or redundant knowledge.
-To address these limitations, we propose M$^3$KG-RAG, a Multi-hop Multimodal Knowledge Graph-enhanced RAG that retrieves query-aligned audio-visual knowledge from MMKGs, improving reasoning depth and answer faithfulness in MLLMs.
-Specifically, we devise a lightweight multi-agent pipeline to construct multi-hop MMKG (M$^3$KG), which contains context-enriched triplets of multimodal entities, enabling modality-wise retrieval based on input queries.
-Furthermore, we introduce GRASP (Grounded Retrieval And Selective Pruning), which ensures precise entity grounding to the query, evaluates answer-supporting relevance, and prunes redundant context to retain only knowledge essential for response generation. 
-Extensive experiments across diverse multimodal benchmarks demonstrate that M$^3$KG-RAG significantly enhances MLLMs’ multimodal reasoning and grounding over existing approaches.
+            Retrieval-Augmented Generation (RAG) has recently been extended to multimodal settings, connecting multimodal large language models (MLLMs) with vast corpora of external knowledge such as multimodal knowledge graphs (MMKGs). 
+            Despite their recent success, multimodal RAG in the audio-visual domain remains challenging due to 1) limited modality coverage and multi-hop connectivity of existing MMKGs, and 2) retrieval based solely on similarity in a shared multimodal embedding space, which fails to filter out off-topic or redundant knowledge.
+            To address these limitations, we propose M$^3$KG-RAG, a Multi-hop Multimodal Knowledge Graph-enhanced RAG that retrieves query-aligned audio-visual knowledge from MMKGs, improving reasoning depth and answer faithfulness in MLLMs.
+            Specifically, we devise a lightweight multi-agent pipeline to construct multi-hop MMKG (M$^3$KG), which contains context-enriched triplets of multimodal entities, enabling modality-wise retrieval based on input queries.
+            Furthermore, we introduce GRASP (Grounded Retrieval And Selective Pruning), which ensures precise entity grounding to the query, evaluates answer-supporting relevance, and prunes redundant context to retain only knowledge essential for response generation. 
+            Extensive experiments across diverse multimodal benchmarks demonstrate that M$^3$KG-RAG significantly enhances MLLMs’ multimodal reasoning and grounding over existing approaches.
           </p>
         </div>
       </div>
@@ -225,13 +157,7 @@ Extensive experiments across diverse multimodal benchmarks demonstrate that M$^3
   </div>
 </section>
 </section>
-
-
 <br><br/>
-
-
-
-
 
       </section>
 
@@ -476,9 +402,8 @@ span.appendChild(emojiImg);
   if (sender === "User") strong.innerHTML = "<b>User</b>";
   else if (sender === "qwen") strong.innerHTML = "<b>Qwen2.5-Omni</b>";
   else if (sender === "qwen-M2") strong.innerHTML = "<b>Qwen2.5-Omni + M<sup>2</sup>ConceptBase</b>";
-
-  else if (sender === "qwen-ours") strong.innerHTML = "<b>Qwen2.5-Omni + M^3^KG-RAG (Ours) </b>";
   else if (sender === "qwen-vatkg") strong.innerHTML = "<b>Qwen2.5-Omni + VAT-KG </b>";
+  else if (sender === "qwen-ours") strong.innerHTML = "<b>Qwen2.5-Omni + M^3^KG-RAG (Ours) </b>";
 
   else strong.textContent = sender;
   para.appendChild(strong);
@@ -639,7 +564,6 @@ function update_dialog_demo() {
         <div class="content has-text-justified">
 
           <style>
-            /* 공통 테이블 스타일 */
             table.PerformanceTable,
             table.WinTable {
               width: 100%;
@@ -702,7 +626,6 @@ function update_dialog_demo() {
             }
           </style>
 
-          <!-- 슬라이드 컨테이너 -->
           <div id="perf-slides">
 
             <!-- ===== Slide 0: Table 1 Overall performance ===== -->
@@ -989,7 +912,6 @@ function update_dialog_demo() {
 
           </div> <!-- /#perf-slides -->
 
-          <!-- 네비게이션 버튼 + 라벨 -->
           <div class="field is-grouped is-grouped-centered perf-nav">
             <p class="control">
               <button class="button is-dark is-rounded" id="perf-prev">
@@ -1011,10 +933,6 @@ function update_dialog_demo() {
     </div>
   </div>
 </section>
-
-
-
-
 
 
 
