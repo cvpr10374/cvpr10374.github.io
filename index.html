@@ -157,7 +157,7 @@
     <div class="columns is-centered has-text-centered" style="width: 100%; margin: 10px 10px 0;">
         <div class="column" style="width: 100%; padding: 0;">
             <h2 class="title is-3"> Overview </h2>
-          <img src="./static/figure_1_ver3.png" alt="Teaser" style="width: 110%; margin-bottom:30px; height: auto;" />
+          <img src="./static/m3kg_construction.png" alt="Teaser" style="width: 110%; margin-bottom:30px; height: auto;" />
           <figcaption class="custom-caption">
             <strong> An overview of the M$^3$KG construction pipeline.</strong> 
             The pipeline consists of three steps: 
@@ -166,7 +166,7 @@
             (iii) Context-Aware Description Refinement, selecting and rewriting the most context-relevant descriptions for each entity; 
             and Self-Reflection Loop, where an inspector agent validates or re-runs uncertain outputs to ensure graph quality.
           </figcaption>
-        <img src="./static/figure2_real_ver7.png" alt="Teaser"      style="width: 100%; margin-top:90px; margin-bottom:10px; height: auto;" />
+        <img src="./static/rag_framework.png" alt="Teaser"      style="width: 100%; margin-top:90px; margin-bottom:10px; height: auto;" />
         <figcaption class="custom-caption">
           <strong> Overview of the Multimodal RAG framework.</strong> 
           The framework consists of two components:
@@ -384,7 +384,7 @@ Extensive experiments across diverse multimodal benchmarks demonstrate that M$^3
     {
       "description": "Example 4",
       "turns": [
-        ["User", "What is shown in the video? Options: Tractor ploughing, Bulldozer, Lower price, Earth digging by excavator", "./static/racketball.mp4"],
+        ["User", "What is shown in the video? Options: Tractor ploughing, Bulldozer, Lower price, Earth digging by excavator", "./static/racketball_10.mp4"],
         ["qwen-vatkg", "The video appears to show a person playing a sport in a walled court.  <b style='color:#d33; font-weight:550; font-family:inherit;'>  The person is holding a racquet and seems to be engaged in a game similar to squash or racquetball.</b> The setting and equipment suggest that the activity involves hitting a ball against the walls of the court. The person is actively moving around the court, indicating they are participating in a fast-paced game."],
         ["qwen-ours", "The video shows a  <b style='color:#337ab7; font-weight:550; font-family:inherit;'>person playing racquetball in an indoor court.</b> The individual is wearing athletic attire, including a white shirt and black shorts, and is using a racquet to hit the ball against the walls. The court's walls, floor, and ceiling serve as playing surfaces, which is typical for racquetball. The person appears to be actively engaged in the game, <b style='color:#337ab7; font-weight:550; font-family:inherit;'> moving around to strike and return the ball as it rebounds.</b>"],
       ]
